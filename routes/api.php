@@ -24,7 +24,7 @@ Route::get('/', function(){
 //Route::controller('UsersController'::class);
 
 Route::get('/postings',[PostingController::class,'index']);
-Route::get('/postings/{id}',[PostingController::class,'show']);
+Route::get('/postings/{idposting}',[PostingController::class,'show']);
 Route::post('/postings',[PostingController::class,'store']);
 Route::put('/postings',[PostingController::class,'update']);
 Route::delete('/postings',[PostingController::class,'destroy']);

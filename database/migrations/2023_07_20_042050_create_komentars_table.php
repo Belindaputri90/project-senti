@@ -19,7 +19,7 @@ class CreateKomentarsTable extends Migration
             $table->string('komentar');
             $table->timestamps();
 
-            $table->foreign('idposting')->references('id')->on('postings');
+            $table->foreign('idposting')->references('idposting')->on('postings');
         });
     }
 
